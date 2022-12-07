@@ -39,8 +39,8 @@ def main() -> None:
     browser.quit()
     
     folder_path = ENV_VARS.get('FOLDER_PATH') or ''
-    path_file = Path(folder_path) / '100-movies-to-watch.txt'
-    save_movies_in_file(str(path_file), movie_names)
+    file_path = Path(folder_path) / '100-movies-to-watch.txt'
+    save_movies_in_file(str(file_path), movie_names)
 
 
 if __name__ == '__main__':
