@@ -1,14 +1,22 @@
 [tool.poetry]
-name = "top-100-movies"
+name = "top-100-best-movies"
 version = "0.1.0"
 description = ""
 authors = ["Igor Ferreira <iferreira.n01@gmail.com>"]
 readme = "README.md"
-packages = [{include = "top_100_movies"}]
+packages = [{include = "scrape_movies"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+python-dotenv = "^0.21.0"
+selenium = "^4.7.2"
 
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+flake8 = "<5.0.0"
+blue = "^0.9.1"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core"]
